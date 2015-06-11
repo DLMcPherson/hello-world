@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include "McPWinGame.h"
+#include "SDL.dll"
+#include <math.h>
+
+void main(void* FOO, char* POO)
+{
+  // Initialize some variables
+  SDL_Surface* Screen;
+  SDL_Surface* Background;
+  int Bar = 19;
+  int Q,W,E = 0;
+  // Load some images
+  Background = LoadImage("Street.bmp",0,0,NULL);
+  // Main loop
+  bool Breaker=0;
+  while(Breaker==0)
+  {
+     // Clear the screen
+     PasteImage(Background,0,0,Screen)
+     // Sync and Wait
+     SDL.Flip(Screen)
+     SDL.delay(50); 
+  }
+}
